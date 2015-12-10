@@ -1,6 +1,32 @@
 ---
 layout: default
 ---
-<div id="home" class="container">
-  <h1>hi</h1>
+<article class="post container"> 
+	<h1 class="post-title">Welcome to Jmexe's Blog!</h1> 
+
+	<article class="post-content"> 
+		<p>I am currently a PhD student at Computer Science Department in University of Massachusetts, Lowell. My research interest lies in the field of machine learning, natural language processing and data mining. </p> 
+		<p>This blog is mainly about my research, some fun projects and photography.</p> 
+		<p>You can find me on <a href="https://github.com/jmexe/" target="_blank">github</a>. <!--more--> <br></p> 
+
+		<h3 id="a-liitle-about-sports">A little about my hobbies</h3> <br/>
+
+		<p>Scuba diving is awesome!</p>
+		<p>I like rock climbing, this is my most frequently visited rock gym <a href="https://www.centralrockgym.com/watertown.php" target="_blank">CRG</a>.</p> 
+		<p>I started to ski last year and fell in love with it, this fatanstic moutain is my most frequently visited place <a href="http://crotchedmtn.com/" target="_blank">Crotched Mountain</a>.</p> 
+		<p><br></p> 
+
+		<h3 id="about-this-site">About this site</h3> 
+		<p>This blog is built with <a href="http://jekyllrb.com" target="_blank">jekyll</a>.</p> 
+		<p>And this cool templete is from <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a>.</p> 
+		<p>You can find the source code of this blog on <a href="https://github.com/jmexe/jmexe.github.io" target="_blank">GitHub</a></p>
+	</article> 
+</article>
+
+{% if site.disqus_shortname %}
+<div class="comment container">
+	<div id="disqus_thread">
+		<a href=""></a>
+	</div>
 </div>
+{% endif %}
