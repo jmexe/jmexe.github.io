@@ -18,11 +18,14 @@ Your project should contain three parts:
 2. /models: This folder cantains all the reference summaries that are used for evaluation. Each file can be identified in the same way as the files in /peers folder
 
 3. rouge.xml: This is the input file for rouge script, it sepcifies which models should be used in evaluating each peer. A good explanation of the detailed format is given by [Kavita Ganesan]. If you happen to work with the DUC dataset, a script that's called "makeRougeScript.pl" could be used for creating this file, it is included in the package. You can define the root path of the peer and model files int the script. And simply run the script as following:
+
 > perl makeRougeScript.pl 2 > your_input_name.xml
+
 Number 2 is the task number.
 
 ####Run the evaluation tasks
 To run the evaluation tasks, you just need to run:
+
 > perl ROUGE-1.5.5.pl -a -c 95 -b 665 -m -n 4 -w 1.2 input.xml > output.xml
 
 ####Analyze the result
@@ -31,10 +34,12 @@ Rouge will generate an output that's not to easy to read, thanks to [Kavita Gane
 ###Handle the exceptions
 #####Cannot open smart_
 Export the path:
+
 >ROUGE_EVAL_HOME=/usr/local/rouge/data
 >export ROUGE_EVAL_HOME
 
 ###Reference
+
 >http://kavita-ganesan.com/rouge-howto
 >http://www.summarizerman.com/post/42675198985/figuring-out-rouge
 >Lin, Chin-Yew. “Rouge: A package for automatic evaluation of summaries.” Text Summarization Branches Out: Proceedings of the ACL-04 Workshop. 2004.
